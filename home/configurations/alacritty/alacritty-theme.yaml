@@ -1,0 +1,125 @@
+schemes:
+  # Tokyo Night theme, based on both:
+  #   https://github.com/ghifarit53/tokyonight-vim
+  #   https://github.com/enkia/tokyo-night-vscode-theme
+  tokyo-night: &tokyo-night
+    # Default colors
+    primary:
+      background: '#1a1b26'
+      foreground: '#a9b1d6'
+
+    # Normal colors
+    normal:
+      black:   '#32344a'
+      red:     '#f7768e'
+      green:   '#9ece6a'
+      yellow:  '#e0af68'
+      blue:    '#7aa2f7'
+      magenta: '#ad8ee6'
+      cyan:    '#449dab'
+      white:   '#787c99'
+
+    # Bright colors
+    bright:
+      black:   '#444b6a'
+      red:     '#ff7a93'
+      green:   '#b9f27c'
+      yellow:  '#ff9e64'
+      blue:    '#7da6ff'
+      magenta: '#bb9af7'
+      cyan:    '#0db9d7'
+      white:   '#acb0d0'
+
+  tokyo-night-storm: &tokyo-night-storm
+    # Default colors
+    primary:
+      background: '#24283b'
+      foreground: '#a9b1d6'
+
+    # Normal colors
+    normal:
+      black:   '#32344a'
+      red:     '#f7768e'
+      green:   '#9ece6a'
+      yellow:  '#e0af68'
+      blue:    '#7aa2f7'
+      magenta: '#ad8ee6'
+      cyan:    '#449dab'
+      white:   '#9699a8'
+
+    # Bright colors
+    bright:
+      black:   '#444b6a'
+      red:     '#ff7a93'
+      green:   '#b9f27c'
+      yellow:  '#ff9e64'
+      blue:    '#7da6ff'
+      magenta: '#bb9af7'
+      cyan:    '#0db9d7'
+      white:   '#acb0d0'
+
+  citylight: &citylight
+    # Default colors
+    primary:
+      background: '0x171d23'
+      foreground: '0xffffff'
+
+    # Cursor colors
+    cursor:
+      text:   '0xfafafa'
+      cursor: '0x008b94'
+
+    # Normal colors
+    normal:
+      black:   '0x333f4a'
+      red:     '0xd95468'
+      green:   '0x8bd49c'
+      blue:    '0xaccfff'
+      magenta: '0xb62d65'
+      cyan:    '0x70e1e8'
+      white:   '0xb7c5d3'
+
+    # Bright colors
+    bright:
+      black:   '0x41505e'
+      red:     '0xd95468'
+      green:   '0x8bd49c'
+      yellow:  '0xebbf83'
+      blue:    '0x5ec4ff'
+      magenta: '0xe27e8d'
+      cyan:    '0x70e1e8'
+      white:   '0xffffff'
+
+  github: &github
+    # Default colors
+    primary:
+      background: '0x24292e'
+      foreground: '0xd1d5da'
+
+    # Normal colors
+    normal:
+      black:   '0x586069'
+      red:     '0xea4a5a'
+      green:   '0x34d058'
+      yellow:  '0xffea7f'
+      blue:    '0x2188ff'
+      magenta: '0xb392f0'
+      cyan:    '0x39c5cf'
+      white:   '0xd1d5da'
+
+    # Bright colors
+    bright:
+      black:   '0x959da5'
+      red:     '0xf97583'
+      green:   '0x85e89d'
+      yellow:  '0xffea7f'
+      blue:    '0x79b8ff'
+      magenta: '0xb392f0'
+      cyan:    '0x56d4dd'
+      white:   '0xfafbfc'
+
+    indexed_colors:
+      - { index: 16, color: '0xd18616' }
+      - { index: 17, color: '0xf97583' }
+
+colors: *citylight

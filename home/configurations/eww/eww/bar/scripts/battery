@@ -1,0 +1,17 @@
+#!/nix/store/gmz9kyy7m7dvbp34wjpmqjyir58z0xch-bash-interactive-5.1-p16/bin/bash
+
+num=$1
+
+battery() {
+	cat "/sys/class/power_supply/BAT${num}/capacity"
+}
+battery_stat() {
+	cat "/sys/class/power_supply/BAT${num}/status"
+}
+
+if [[ "$2" == "--bat" ]]; then
+	battery
+elif [[ "$2" == "--bat-st" ]]; then
+	battery_stat
+fi
+

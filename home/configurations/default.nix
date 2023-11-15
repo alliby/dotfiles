@@ -1,0 +1,29 @@
+{
+  imports = [
+    ./bash
+    ./rust
+    ./polybar
+    ./alacritty
+    ./i3
+    ./bspwm.nix
+    ./picom.nix
+    ./xidlehook.nix
+    ./sxhkd.nix
+    ./helix.nix
+    ./rofi.nix
+    ./git.nix
+    ./mpv.nix
+    ./pcmanfm.nix
+    ./starship.nix
+    ./clipmenu.nix
+    ./zathura.nix
+    ./sxiv.nix
+    ./batsignal.nix
+    ./android.nix
+    ./wine.nix
+    ./dunst.nix
+    ./zellij.nix
+    ./xresources.nix
+    ./xdg.nix
+  ];
+}

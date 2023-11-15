@@ -1,0 +1,6 @@
+#!/nix/store/gmz9kyy7m7dvbp34wjpmqjyir58z0xch-bash-interactive-5.1-p16/bin/bash
+
+EWW="eww -c $HOME/.config/eww/bar"
+
+${EWW} daemon && ${EWW} open-many bar
+bspc config top_padding 40
