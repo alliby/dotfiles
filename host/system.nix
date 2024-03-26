@@ -19,8 +19,16 @@
   systemd.services.NetworkManager-wait-online.enable = false; # slows down boot time
 
   # Bluetooth
-  hardware.bluetooth.enable = true;
-  services.blueman.enable = true;
+  hardware.bluetooth = {
+    enable = true;
+    package = pkgs.bluez.override { enableExperimental = true; };
+    settings = {
+      General = {
+        Experimental = true;
+      };
+    };
+  };
+  
 
   # Set your time zone.
   time.timeZone = "Africa/Algiers";
