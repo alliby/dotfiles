@@ -22,7 +22,8 @@
     ];
   };
 
-  services.xserver.videoDrivers = [ "nvidia" "nvidiaLegacy390" "nvidiaLegacy340" ];
+  services.xserver.videoDrivers = [ "nvidia" ];
+
   environment.systemPackages = with pkgs; [ 
     vulkan-loader
     vulkan-headers
@@ -33,8 +34,9 @@
     linux-firmware
   ];
 
-  hardware.nvidia.powerManagement.enable = true;
-  hardware.nvidia.modesetting.enable = true;
+  hardware.nvidia = {
+    modesetting.enable = true;
+  };
 
   hardware.nvidia.prime = {
     offload = {
