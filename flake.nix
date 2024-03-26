@@ -10,7 +10,7 @@
   };
 
   outputs = {self, nixpkgs,  ...} @ inputs:{
-    nixosConfigurations.nix = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.unix = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = { inherit inputs; };
       modules = [ ./host ./overlays ];
