@@ -9,14 +9,13 @@
     # set channels (backwards compatibility)
     etc = {
       "nix/flake-channels/nixpkgs".source = inputs.nixpkgs;
-      "nix/flake-channels/home-manager".source = inputs.home-manager;
     };
     systemPackages = with pkgs; [
       acpi
       pciutils
       brightnessctl
       git
-      # qemu
+      qemu
     ];
     defaultPackages = [];
   };
