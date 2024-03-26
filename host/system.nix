@@ -7,7 +7,7 @@
   
   # Networking
   networking = {
-    hostName = "nix"; # Define your hostname.
+    hostName = "unix"; # Define your hostname.
     nameservers = ["1.1.1.1" "8.8.8.8"]; # Change Dns Resolver
     usePredictableInterfaceNames = false;
     networkmanager = {
