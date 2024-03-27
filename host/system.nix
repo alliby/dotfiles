@@ -49,14 +49,12 @@
     windowManager.bspwm.enable = true;
     windowManager.i3.enable = true;
 
-    # # Configure keymap in X11
-    # # See Full Keyboard Layout Keybinds "grep "grp:.*toggle" /usr/share/X11/xkb/rules/base.lst"
-    xkb = {
-      layout = "us,ara";
-      options = "grp:alt_shift_toggle";
-    };
+    # Configure keymap in X11
+    # See Full Keyboard Layout Keybinds "grep "grp:.*toggle" /usr/share/X11/xkb/rules/base.lst"
+    layout = "us,ara";
+    xkbOptions = "grp:alt_shift_toggle";
 
-    # # Enable touchpad support (enabled default in most desktopManager).
+    # Enable touchpad support (enabled default in most desktopManager).
     libinput.enable = true;
     libinput.touchpad.naturalScrolling = true;
   };
